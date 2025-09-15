@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placeholder Screenshot Generator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #0f172a, #1e293b, #0ea5e9);
+            color: white;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: rgba(15, 23, 42, 0.9);
+            padding: 60px;
+            border-radius: 20px;
+            border: 2px solid #0ea5e9;
+            text-align: center;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            max-width: 800px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #0ea5e9, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .subtitle {
+            font-size: 1.5rem;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+        .description {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .feature {
+            background: rgba(14, 165, 233, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(14, 165, 233, 0.3);
+        }
+        .feature h3 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+        .project-name {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 1.2rem;
+            color: #38bdf8;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="project-name" id="projectName">Project Screenshot</div>
+    <div class="container">
+        <h1 id="title">Project Title</h1>
+        <div class="subtitle" id="subtitle">Advanced Technology Solution</div>
+        <div class="description" id="description">
+            This is a comprehensive project showcasing modern development practices and innovative solutions.
+            Features include responsive design, real-time processing, and user-friendly interfaces.
+        </div>
+        <div class="features">
+            <div class="feature">
+                <h3>Feature 1</h3>
+                <p>Advanced functionality with modern design</p>
+            </div>
+            <div class="feature">
+                <h3>Feature 2</h3>
+                <p>Real-time processing and analytics</p>
+            </div>
+            <div class="feature">
+                <h3>Feature 3</h3>
+                <p>User-friendly interface and navigation</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // You can modify these values to create different screenshots
+        const projects = {
+            'ai-financial-segmentation': {
+                title: 'AI Financial Segmentation',
+                subtitle: 'Machine Learning Analytics',
+                description: 'Advanced AI system for financial data analysis and customer segmentation using machine learning algorithms.'
+            },
+            'ecommerce-buyflow': {
+                title: 'BuyFLOW E-Commerce',
+                subtitle: 'Shopping Platform',
+                description: 'Modern e-commerce platform with secure payments, product catalog, and responsive design.'
+            },
+            'lost-found-portal': {
+                title: 'Lost & Found Portal',
+                subtitle: 'Community Platform',
+                description: 'Web portal for reporting and tracking lost items with automated matching and notifications.'
+            },
+            'ai-whiteboard-summarizer': {
+                title: 'AI Whiteboard Summarizer',
+                subtitle: 'Document Processing',
+                description: 'AI-powered tool for capturing and summarizing handwritten whiteboard notes into digital text.'
+            },
+            'library-management-system': {
+                title: 'Library Management',
+                subtitle: 'Administrative System',
+                description: 'Comprehensive system for book cataloging, issue/return tracking, and student record management.'
+            },
+            'Agriculture': {
+                title: 'AI-Powered Agriculture Assistant',
+                subtitle: 'Agriculture Platform',
+                description: 'AI-driven platform for crop monitoring, disease detection, and yield prediction to support farmers.'
+            }
+        };
+
+        // Change this to generate different project screenshots
+        const currentProject = 'ai-financial-segmentation';
+        
+        if (projects[currentProject]) {
+            document.getElementById('title').textContent = projects[currentProject].title;
+            document.getElementById('subtitle').textContent = projects[currentProject].subtitle;
+            document.getElementById('description').textContent = projects[currentProject].description;
+            document.getElementById('projectName').textContent = projects[currentProject].title + ' - Screenshot';
+        }
+
+        // Instructions for taking screenshots:
+        // 1. Open this file in a browser
+        // 2. Change the currentProject variable above
+        // 3. Take a screenshot (1920x1080 recommended)
+        // 4. Save to the appropriate screenshots folder
+        // 5. Repeat for different project views
+    </script>
+</body>
+</html>
