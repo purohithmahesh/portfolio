@@ -147,20 +147,6 @@ npm run build
 2. Run: `vercel`
 3. Follow the prompts
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📞 Support
-
-If you have any questions or need help customizing the portfolio, feel free to reach out!
-
----
-
 **Built with ❤️ by Mahesh Purohit**
 
 
